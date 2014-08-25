@@ -29,7 +29,7 @@ echo(str("sun_teeth: ", sun_teeth, ", ring_teeth: ", ring_teeth, ", planet_teeth
 
 echo(str("gear ratio: ", ring_teeth+sun_teeth, " to ", sun_teeth, " (", 1+ring_teeth/sun_teeth, ":1)"));
 
-sun_gear_hub_height = 6;
+sun_gear_hub_height = 7;
 sun_gear_thread_height = 6;
 sun_gear_hub_radius = 6;
 sun_gear_origin = [0, 0, 4];
@@ -128,8 +128,8 @@ module base_solid()
 		}
 	}
 
-	translate([0, 0, base_size[z]-1])
-	linear_extrude(height=1)
+	translate([0, 0, base_size[z]-2])
+	linear_extrude(height=2)
 		rounded_square(base_size, 3, $fn=32);
 }
 
