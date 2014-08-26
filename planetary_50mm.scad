@@ -148,8 +148,8 @@ module base_void()
 		M3_bolt_hole(base_size[z]-4, support=1);
 	}
 
-	translate([0, 0, base_size[z]-1-.05])
-	linear_extrude(height=1+.1)
+	translate([0, 0, base_size[z]-2-.05])
+	linear_extrude(height=2+.1)
 		circle(sun_gear_hub_radius+moving_clearance*2);
 
 	vitamin(part_name, part_count, 4, M3x10, comment="Motor mounting bolts", source="McMaster-Carr");
