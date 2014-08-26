@@ -459,8 +459,8 @@ module cover_void()
 
 	for(i=[-1, 1]) for (j=[-1, 1])
 	{
-		translate([i*annulus_mount_hole_spacing/2, j*annulus_mount_hole_spacing/2, -base_size[z]-annulus_size[z]-5])
-		M3_bolt_hole(25, head_length=7, support=1);
+		#translate([i*annulus_mount_hole_spacing/2, j*annulus_mount_hole_spacing/2, -base_size[z]-annulus_size[z]-5])
+		M3_bolt_hole(28, head_length=7, support=1);
 	}
 
     vitamin(part_name, part_count, 4, M3x20, comment="Annulus mounting bolts", source = "McMaster-Carr");
